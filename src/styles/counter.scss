@@ -1,0 +1,19 @@
+.counter {
+  &__colon {
+    text-align: center;
+  }
+
+  &__number {
+    position: relative;
+  }
+
+  &__date {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

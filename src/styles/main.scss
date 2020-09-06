@@ -1,7 +1,20 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "reset";
+@import "form";
+@import "button";
+@import "counter";
+@import "advantages";
+@import "mentor";
+@import "choice";
+@import "reviews";
+@import "footer";
+@import "questions-form";
 
-body {
-  background: $c-gray;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
 }

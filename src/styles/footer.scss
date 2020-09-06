@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000;
+  color: #a09a9a;
+  height: 130px;
+  line-height: 130px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    height: 60px;
+    line-height: 60px;
+  }
+}

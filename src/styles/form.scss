@@ -1,0 +1,52 @@
+.form {
+  height: 360px;
+  background-color: #fff;
+  color: #525252;
+  padding: 25px;
+  text-align: center;
+  align-items: start;
+  box-sizing: border-box;
+
+  &__title {
+    font-weight: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__name,
+  &__phone {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    block-size: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &__button {
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .form {
+    order: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    height: 400px;
+  }
+}

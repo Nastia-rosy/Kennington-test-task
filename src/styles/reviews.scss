@@ -1,0 +1,85 @@
+.reviews {
+  &__header {
+    position: relative;
+    margin-top: 160px;
+    padding-bottom: 35px;
+    color: #555;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 25px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+      height: 2px;
+      width: 70px;
+      background-color: #117ff8;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 85px;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__quotes {
+    width: 55px;
+    height: 42px;
+    z-index: -1;
+    position: absolute;
+    top: -5px;
+    left: -30px;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-style: italic;
+    color: #595854;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__person {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__with-us {
+    color: #595854;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  &__button {
+    width: 167px;
+    display: block;
+    margin: 55px auto 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .reviews__cards {
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .reviews {
+    &__header {
+      margin-top: 60px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.questions-form {
+  background-image: url(../images/footer-background.png);
+  width: 100%;
+  height: 555px;
+  object-fit: contain;
+  background-position: center;
+  margin-top: 100px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  &__header {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    color: #cad9d6;
+    margin-bottom: 70px;
+    font-size: 13px;
+  }
+
+  &__button {
+    width: 125px;
+    display: block;
+    margin: 35px auto 0;
+  }
+
+  &__form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 350px));
+    grid-gap: 25px;
+  }
+
+  &__input {
+    height: 45px;
+    // width: 350px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding-left: 10px;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .questions-form {
+    margin-top: 25px;
+    &__form-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
